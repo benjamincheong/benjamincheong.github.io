@@ -1,4 +1,4 @@
-![](splogo.png)
+![SP Logo](pictures/splogo.png)
 
 # EP0404 AWS Cloud Foundation Lab 3 Assessment Part 1
 
@@ -63,14 +63,14 @@ Step 2: Create IDE Environment with AWS Cloud 9
 1. Open AWS Cloud 9
 2. Create Environment and Name: 1922491-BenjaminCheong
 
-![](fig1a.png)_Figure 1(A)_
+![](pictures/fig1a.png)_Figure 1(A)_
 
 Step 3: Create a Git Repository
 
 1. Open the AWS Code Commit Console
 2. Select Create Repository
 
-![](fig1b.png)
+![](pictures/fig1b.png)
 
 _Figure 1(B)_
 
@@ -96,7 +96,7 @@ _git clone https://git-codecommit.us-east-1-amazonaws.com/v1/repos/1922491-Ben_
 _$ git add .
  $ git push_
 
-![](=fig1d.png)
+![](pictures/fig1d.png)
 
 _Figure 1(D)_
 
@@ -105,7 +105,7 @@ Step 5: Enable Web Hosting with the AWS Amplify Console
 1. Launch the [Amplify Console console page](https://console.aws.amazon.com/amplify/home)
 2. Click **Get Started** under Deploy with Amplify Console
 
-![](fig1e.png)
+![](pictures/fig1e.png)
 
 _Figure 1(E)_
 
@@ -116,7 +116,7 @@ _Figure 1(E)_
 5. On the &quot;Review&quot; page select **Save and deploy**
 6. The process takes a couple of minutes for Amplify Console to create the necessary resources and to deploy your code. Once Completed, click on the site image to launch your 1922491-BenjaminCheong site.
 
-![](fig1f.png)
+![](pictures/fig1f.png)
 
 _Figure 1(F)_
 
@@ -125,7 +125,7 @@ Step 6: Modify your site
 1. Open the ` index.html` page and modify the title line so that it says: \&lt;title\&gt; 1922491-BenjaminCheong Website!! \&lt;/title\&gt;
 2. Save the file and commit to your git repository again. Amplify Console will begin to build the site again soon after it notices the update to the repository.
 
-![](fgi1g.png)
+![](pictures/fgi1g.png)
 
 _Figure 1(G)_
 
@@ -137,7 +137,7 @@ $ git commit -m &quot;updated title&quot;
 
 1. Once completed, re-open the site that you just created and notice the title change.
 
-![](fig1h.png)
+![](pictures/fig1h.png)
 
 _Figure 1(H)_
 
@@ -147,7 +147,7 @@ Step 1: Create an Amazon Cognito User Pool
 
 1. From the AWS Console Click **Services** then select **Cognito** under Mobile Services.
 
-![](fig2a.png)
+![](pictures/fig2a.png)
 
 _Figure 2(A)_
 
@@ -155,19 +155,19 @@ _Figure 2(A)_
 2. Choose **Create a user Pool.**
 3. Provide a name for your user pool such as BenGroup, then select **Review Defaults**
 
-![](fig2b.png)
+![](pictures/fig2b.png)
 
 _Figure 2(B)_
 
 1. On the review page, click **Create pool.**
 
-![](fig2c.png)
+![](pictures/fig2c.png)
 
 _Figure 2(C)_
 
 1. Note the **Pool Id** on the Pool details page of your newly created user pool.
 
-![](fig2d.png)
+![](pictures/fig2d.png)
 
 _Figure 2(D)_
 
@@ -179,13 +179,13 @@ Step 2: Add an App to your User Pool
 4. **Uncheck** the Generate client secret option. Client secrets aren&#39;t currently supported for use with browser-based applications.
 5. Choose **Create app client.**
 
-![](fig2e.png)
+![](pictures/fig2e.png)
 
 _Figure 2(E)_
 
 1. Note the **App client id** for the newly created application.
 
-![](fig2f.png)
+![](pictures/fig2f.png)
 
 _Figure 2(F)_
 
@@ -194,11 +194,11 @@ Step 3: Update the Website Config
 1. From the local machine, open `1922491-Ben/js/config.js` in Visual Studio Code.
 2. Update the Cognito section with the correct values for the user pool and app you just created. Should look like this below.
 
-![](fig2g.png)
+![](pictures/fig2g.png)
 
 _Figure 2(G)_
 
-![](fig2h.png)
+![](pictures/fig2h.png)
 
 _Figure 2(H)_
 
@@ -219,7 +219,7 @@ Step 4: Test your Implementation
 9. After confirming the new user using either the /verify.html page or the Cognito console, visit /signin.html and log in using the email address and password you entered during the registration step.
 10. If successful you should be redirected to /ride.html. You should see a notification that the API is not configured.
 
-![](fig2i.png)
+![](pictures/fig2i.png)
 
 _Figure 2(I)_
 
@@ -229,7 +229,7 @@ Step 1: Create an Amazon DynamoDB Table
 
 1. From the AWS Management Console, choose **Services** then select **DynamoDB** under Databases.
 
-![](fig3a.png)
+![](pictures/fig3a.png)
 
 _Figure 3(A)_
 
@@ -242,7 +242,7 @@ _Figure 3(B)_
 1. Check the **Use default settings** box and choose **Create**.
 2. Scroll to the bottom of the Overview section of your new table and note the **ARN**. You will use this in the next section.
 
-![](fig3c.png)
+![](pictures/fig3c.png)
 
 _Figure 3(C)_
 
@@ -251,7 +251,7 @@ Step 2: Create an IAM Role for your Lambda function
 1. From the AWS Management Console, click on **Services** and then select **IAM** in the Security, Identity &amp; Compliance section.
 2. Select **Roles** in the left navigation bar and then choose **Create New Role**.
 
-![](fig3d.png)
+![](pictures/fig3d.png)
 
 _Figure 3(D)_
 
@@ -259,14 +259,14 @@ _Figure 3(D)_
 
 **Note:** Selecting a role type automatically creates a trust policy for your role that allows AWS services to assume this role on your behalf. If you were creating this role using the CLI, AWS CloudFormation or another mechanism, you would specify a trust policy directly.
 
-![](fig3e.png)
+![](pictures/fig3e.png)
 
 _Figure 3(E)_
 
 1. Begin typing AWSLambdaBasicExecutionRole in the **Filter** text box and check the box next to that role.
 2. Choose **Next Step**.
 
-![](fig3f.png)
+![](pictures/fig3f.png)
 
 _Figure 3(F)_
 
@@ -274,13 +274,13 @@ _Figure 3(F)_
 2. Choose **Create Role.**
 3. Type 1922491-BenjaminCheongLambda into the filter box on the Roles page and choose the role you just created.
 
-![](fig3g.png)
+![](pictures/fig3g.png)
 
 _Figure 3(G)_
 
 1. On the Permissions tab, choose the **Add inline policy** link in the lower right corner to create a new inline policy.
 
-![](fig3h.png)
+![](pictures/fig3h.png)
 
 _Figure 3(H)_
 
@@ -301,13 +301,13 @@ _Figure 3(H)_
 7. Paste the ARN of the table you created in the previous section in the **Specify ARN for table field** and choose **Add.**
 8. Choose Review Policy.
 
-![](fig3i.png)
+![](pictures/fig3i.png)
 
 _Figure 3(I)_
 
 1. Enter DynamoDBWriteAccess for the policy name and choose **Create policy.**
 
-![](fig3j.png)
+![](pictures/fig3j.png)
 
 _Figure 3(J)_
 
@@ -316,7 +316,7 @@ Step 3: Create a Lambda Function for Handling Requests
 1. Choose **Services** then select **Lambda** in the Compute section.
 2. Click **Create function**.
 
-![](fig3k.png)
+![](pictures/fig3k.png)
 
 _Figure 3(K)_
 
@@ -327,13 +327,13 @@ _Figure 3(K)_
 5. Select WildRydesLambda from the **Existing Role** dropdown.
 6. Click on **Create function**.
 
-![](fig3l.png)
+![](pictures/fig3l.png)
 
 _Figure 3(L)_
 
 1. Scroll down to the **Function code** section and replace the existing code in the **index.js** code editor with the contents of [requestUnicorn.js](https://github.com/aws-samples/aws-serverless-workshops/blob/master/WebApplication/3_ServerlessBackend/requestUnicorn.js).
 
-![](fig3m.png)
+![](pictures/fig3m.png)
 
 _Figure 3(M)_
 
@@ -378,7 +378,7 @@ Step 4: Test your Implementation
 
 1. Click **Create**.
 
-![](fig3n.png)
+![](pictures/fig3n.png)
 
 _Figure 3(N)_
 
@@ -400,7 +400,7 @@ _Figure 3(N)_
 
 }
 
-![](fig3o.png)
+![](pictures/fig3o.png)
 
 _Figure 3(O)_
 
@@ -414,7 +414,7 @@ Step 1: Create a new REST API
 4. Keep Edge optimized selected in the **Endpoint Type** dropdown.
 5. Choose **Create API**
 
-![](fig4a.png)
+![](pictures/fig4a.png)
 
 _Figure 4(A)_
 
@@ -429,7 +429,7 @@ Step 2: Create a Cognito User Pools Authorizer
 7. Enter Authorization for the **Token Source**.
 8. Choose **Create**.
 
-![](fig4b.png)
+![](pictures/fig4b.png)
 
 _Figure 4(B)_
 
@@ -448,7 +448,7 @@ Step 3: Create a new resource and method
 1. In the left nav, click on **Resources** under your _1922491-BenjaminCheong_ API.
 2. From the **Actions** dropdown select **Create Resource.**
 
-![](fig4c.png)
+![](pictures/fig4c.png)
 
 _Figure 4(C)_
 
@@ -457,14 +457,14 @@ _Figure 4(C)_
 3. Select **Enable API Gateway CORS** for the resource.
 4. Click **Create Resource.**
 
-![](fig4d.png)
+![](pictures/fig4d.png)
 
 _Figure 4(D)_
 
 1. With the newly created /ride resource selected, from the **Action** dropdown select **Create Method.**
 2. Select POST from the new dropdown that appears, then **click the checkmark.**
 
-![](fig4e.png)
+![](pictures/fig4e.png)
 
 _Figure 4(E)_
 
@@ -485,7 +485,7 @@ Step 4: Deploy Your API
 3. Enter prod for the **Stage Name.**
 4. Choose **Deploy.**
 
-![](fig4f.png)
+![](pictures/fig4f.png)
 
 _Figure 4(F)_
 
@@ -496,11 +496,11 @@ Step 5: Update the Website Config
 1. Open the config.js file in a text editor.
 2. Update the **invokeUrl** setting under the **api** key in the config.js file. Set the value to the **Invoke URL** for the deployment stage your created in the previous section.
 
-![](fig4g.png)
+![](pictures/fig4g.png)
 
 _Figure 4(G)_
 
-![](fig4h.png)
+![](pictures/fig4h.png)
 
 _Figure 4(H)_
 
@@ -508,7 +508,7 @@ _Figure 4(H)_
 
 $ git push
 
-![](fig4i.png)
+![](pictures/fig4i.png)
 
 _Figure 4(I)_
 
