@@ -523,4 +523,4 @@ Additional Comments:
 
 You have come to the end of the Project, and I hope you are able to build the project like I did. If you have any issues, refer to stack overflow for more information
 
-_Individual Assignment done by_: _BENJAMIN CHEONG CHEE WENG
+_Individual Assignment done by_: _BENJAMIN CHEONG CHEE WENG 
