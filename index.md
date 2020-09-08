@@ -5,11 +5,15 @@ Currently a Year 2 DIT Student in Singapore Polytechnic. Other than programming,
 
 
 # Projects
-## EP0404 AWS Cloud Foundations Lab 3 Part 1
+## 1. EP0404 AWS Cloud Foundations Lab 3 Part 1
 
-Click on the link to see my EP0404 AWS Cloud Documentation Lab 3 Part 1
-[EP0404-AWSCloudFoundation](EP0404-AWSCloudFoundations/EP0404-AWSCloudFoundations.md)
+Click on the link to see my EP0404 AWS Cloud Foundations Documentation Lab 3 Part 1
+[EP0404-AWSCloudFoundation](EP0404-AWSCloudFoundations/EP0404-AWSCloudFoundationsIndividual.md)
 
 ---
+## 2. EP0404 AWS Cloud Foundations Lab 3 Part 2
+Click on the link to view my EP0404 AWS Cloud Foundations Documentation Lab 3 Part 2
+[EP0404-AWSCloudFoundation](EP0404-AWSCloudFoundations/EP0404-AWSCloudFoundationsGroup.md)
+
 # Contact 
 Email: benjamincheong.19@ichat.sp.edu.sg
