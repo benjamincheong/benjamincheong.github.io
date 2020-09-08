@@ -13,32 +13,32 @@ By: _Benjamin Cheong Chee Weng
 # Content
 
 1. Introduction
-  1. _Why I choose the hands-on lab?_
-  2. _How this hands-on lab has helped me?_
-  3. _Where can I apply the knowledge from this hands-on lab?_
+    1. _Why I choose the hands-on lab?_
+    2. _How this hands-on lab has helped me?_
+    3. _Where can I apply the knowledge from this hands-on lab?_
 2. Host a Static Website
-  1. _Select a Region_
-  2. _Create a Git repository_
-  3. _Populate the Git repository_
-  4. _Enable Web Hosting with the AWS Amplify Console_
-  5. _Modify your site_
+    1. _Select a Region_
+    2. _Create a Git repository_
+    3. _Populate the Git repository_
+    4. _Enable Web Hosting with the AWS Amplify Console_
+    5. _Modify your site_
 3. Manage Users
-  1. _Create an Amazon Cognito User Pool_
-  2. _Add an App to your user Pool_
-  3. _Update the Website Config_
-  4. _Testing Implementation_
+    1. _Create an Amazon Cognito User Pool_
+    2. _Add an App to your user Pool_
+    3. _Update the Website Config_
+    4. _Testing Implementation_
 4. Build a serverless Backend
-  1. _Create an Amazon DynamoDB Table_
-  2. _Create an IAM Role for your Lambda function_
-  3. _Create a Lambda Function for Handling Requests_
-  4. _Testing Implementation_
+    1. _Create an Amazon DynamoDB Table_
+    2. _Create an IAM Role for your Lambda function_
+    3. _Create a Lambda Function for Handling Requests_
+    4. _Testing Implementation_
 5. Deploy a RESTful API
-  1. _Create a New REST API_
-  2. _Create a Cognito User Pools Authorizer_
-  3. _Create a new resource and method_
-  4. _Deploy your API_
-  5. _Update the Website Config_
-  6. _Validating Implementation_
+    1. _Create a New REST API_
+   2. _Create a Cognito User Pools Authorizer_
+    3. _Create a new resource and method_
+    4. _Deploy your API_
+    5. _Update the Website Config_
+    6. _Validating Implementation_
 
 # **Introduction**
 
