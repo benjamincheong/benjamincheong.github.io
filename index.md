@@ -24,6 +24,7 @@ Syntax highlighted code block
 **Bold** and _Italic_ and `Code` text
 
 [Link](url) and ![Image](src)
+[EP0404 AWS Cloud Foundations](EP0404-AWSCloudFoundations/EP0404-AWSCloudFoundations.md)
 ```
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
